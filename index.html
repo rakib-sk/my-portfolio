@@ -1,150 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rakib --> Portflio</title>
-  
-  <!-- font asowme cdn link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakib | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- 
-  <!-- css link -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-  <header class="header">
-    <a href="#" class="logo">Rakib Hossen</a>
-    <nav class="navbar">
-      <a class="hover" href="#home">Home</a>
-      <a class="hover" href="#about">About me</a>
-      <a class="hover" href="#services">Service</a>
-      <a class="hover" href="#project">Project</a>
-      <a class="hover" href="#contact">contact me</a>
-      
-    </nav>
-  </header>
-  
-  <!-- home secton -->
-  <section class="home" id="home">
-    <div class="home-image">
-      <img class="img-hov media-section1 a" src="img/home.jpg" alt="portfolio image">
-    </div>
-    
-    <div class="home-content">
-      <h3>Hello, Myself</h3>
+
+<header class="header">
+  <div class="logo">Rakib</div>
+  <i class="fas fa-bars" id="menu"></i>
+  <nav class="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <i class="fas fa-moon" id="darkToggle"></i>
+  </nav>
+</header>
+
+<!-- Home Section -->
+<section class="home" id="home">
+  <div class="home-content">
+    <div class="home-text">
+      <h3>Hello, I'm</h3>
       <h1>Rakib Hossen</h1>
-      <h3>and i'm a <span class="multipalText">Web developer</span></h3>
-      <p>I specialize in frontend development. I have completed HTML and CSS, and created several projects.I have skill of famework. I have compelet larnig to bootstrap. I'm currently learning JavaScript.</p>
-         
-    
-    <div class="media-section1">
-      <a href="https://x.com/Swe_Rakib?s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
-      <a href="https://www.facebook.com/share/1C5ZrRXg1B/"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://github.com/rakib-sk"><i class="fab fa-github"></i></i></a>
-      <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+      <h3>I'm a <span id="typed"></span></h3>
+      <p>Frontend developer building clean & responsive websites.</p>
     </div>
-      
-      <button class="btn">Download CV</button>
-       </div>
-    </section>
-  
-  <!-- about scetion -->
- 
-  <section class="about" id="about">
-    <div class="about-content">
-      <h2 class="headig">About <span> Me</span></h2>
-      <h1>i'm <span>Frontent developer</span></h1>
-      <p>Hello, My name is Rakib. I am 17year old. I am a frontent developer. I love coding.I used mobile to make it. I have compelet the SSC eaxmination in 2025. I am a new web developer. If you hire me. Then contact me.</p>
-      
-      <a href="#" class="btn">Download Resume</a>
+    <div class="home-img">
+      <img src="img/home.png" alt="Rakib" class="float">
     </div>
-    
-    <div class="about-img">
-      <img src="img/home.jpg">
-    </div>
-  </section>
-  
-  
-  <!-- servoces scetion -->
-  <section class="services" id="services">
-    <h1 class="services-heading">My <span> Services</span></h1>
-    <div class="services-container">
-      <div class="services-box">
-        <i class="fa-solid fa-handshake"></i>
-        <h1>Frontent</h1>
-        <p>I am a frontent developer. I am using to frontent development using html,css,bootstrap and JavaScript. I have created some project. E-comarce web site,My friend web site, Login page etc.</p>
-        <a href="#sevices" class="my-btn">Show more</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-img scroll">
+    <img src="img/about.jpg" alt="About Me">
+  </div>
+  <div class="about-text scroll">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <p>
+      I'm a frontend developer from Bangladesh.  
+      Currently studying <strong>Computer Science & Technology</strong>  
+      at <strong>Jashore Polytechnic Institute</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+  <h2 class="section-title scroll">My <span>Skills</span></h2>
+
+  <div class="skill-grid">
+
+    <!-- Programming -->
+    <div class="skill-card scroll">
+      <h4>Programming</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
       </div>
-      
-       <div class="services-box">
-        <i class="fa-solid fa-handshake"></i>
-        <h1>Backend</h1>
-        <p>I have no skill in web backend feild. I will larn backend development. I would using famework is Django to development backend. I have a skill in python. Python in my favorite programming language.</p>
-        <a href="#sevices" class="my-btn">Show more</a>
+    </div>
+
+    <!-- Web Development -->
+    <div class="skill-card scroll">
+      <h4>Web Dev</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
       </div>
-      
-       <div class="services-box">
-        <i class="fa-solid fa-handshake"></i>
-        <h1>Data Base</h1>
-        <p>I have no skill in web database feild. I will larn database development. I would using SQL and MongoDB to setup web database. 
-        </p>
-        <a href="#sevices" class="my-btn">Show more</a>
+    </div>
+
+    <!-- Framework -->
+    <div class="skill-card scroll">
+      <h4>Framework</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
       </div>
-      
     </div>
-  </section>
-  <!-- project section -->
-  <section class="project" id="project">
-    <h1>My <span> Some</span>Projects</h1>
-    <h6>NOTE: <u>If you want to see the project, press the image</u></h6>
-    <div class="project-top3">
-           <a href="https://rakib-sk.github.io/E-commerce-/"><img src="img/project1.jpg" alt="project image"></a>
-            <a href="https://rakib-sk.github.io/my-friends-projict/home-page.html"><img src="img/project2.jpg" alt="project image"></a>
-            <a href="https://rakib-sk.github.io/simple-login-page/"><img src="img/project3.jpg" alt="project image"></a>
+
+    <!-- Database -->
+    <div class="skill-card scroll">
+      <h4>Database</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="MariaDB">
+      </div>
     </div>
-    <br />
-    <div class="project-top6">
-      <a href="https://rakib-sk.github.io/my-friends-projict/home-page.html"><img src="img/project4.jpg" alt="project image"></a>
-   <a href="https://rakib-sk.github.io/my-info/"><img src="img/project5.jpg" alt="project image"></a>
-    <a href="https://rakib-sk.github.io/simple-home-page/"><img src="img/project6.jpg" alt="project image"></a>
+
+    <!-- Operating System -->
+    <div class="skill-card scroll">
+      <h4>OS</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows">
+      </div>
     </div>
-  </section>
-  <!-- contact me -->
-  <section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <form action="" onsubmit="this.action = `https://wa.me/8801828315879?text=Name: ${this.name.value}%0APhone: ${this.phone.value}%0AEmail: ${this.email.value}%0ASubject: ${this.subject.value}%0AMessage: ${this.message.value}`">
-    <div class="input-box">
-      <input type="text" name="name" placeholder="Full Name" required>
+
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2 class="section-title scroll">My <span>Projects</span></h2>
+  <div class="project-grid">
+    <div class="card scroll">
+      <a href="https://smartattendencesystemrakib.netlify.app/"><img src="img/project1.jpg" alt="Smart Attendence System"></a>
+      <div class="layer">
+        <h4>Smart Attendence System</h4>
+      </div>
     </div>
-    <div class="input-box">
-      <input type="tel" name="phone" placeholder="Your phone number" required>
+    <div class="card scroll">
+      <img src="img/project2.jpg" alt="Login Page">
+      <div class="layer">
+        <h4>Login Page</h4>
+      </div>
     </div>
-    <div class="input-box">
-      <input type="email" name="email" placeholder="Enter your E-mail" required>
+    <div class="card scroll">
+      <img src="img/project3.jpg" alt="Portfolio">
+      <div class="layer">
+        <h4>Portfolio</h4>
+      </div>
     </div>
-    <div class="input-box">
-      <input type="text" name="subject" placeholder="Email subject">
-    </div>
-    <div class="input-box">
-      <textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
-    </div>
-    <input type="submit" value="Send Message" class="btn">
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2 class="section-title scroll">Contact <span>Me</span></h2>
+  <form onsubmit="sendToWhatsApp();return false;" class="scroll">
+    <input id="name" placeholder="Name" required>
+    <input id="phone" placeholder="Phone" required>
+    <input id="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Message" required></textarea>
+    <button>Send via WhatsApp</button>
   </form>
 </section>
-  <!-- footer section -->
-  <footer class="footer">
-    <div class="socail">
-      <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-      <a href="https://www.facebook.com/share/1C5ZrRXg1B/"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://github.com/rakib-sk"><i class="fab fa-github"></i></a>
-      <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Rakib Hossen</h3>
+    <p>Frontend Developer • CST Student at Jashore Polytechnic Institute</p>
+    <div class="footer-social">
+      <a href="https://github.com/rakib-sk" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/share/16nXunAwJK/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
     </div>
-    <p class="copy-right">
-      &copy; Rakib Hossen --> all Right reserved
-    </p>
-  </footer>
-  
-  <script src="js/main.js"></script>
+    <span class="footer-copy">© 2026 Rakib Hossen. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
