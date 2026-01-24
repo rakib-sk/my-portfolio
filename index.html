@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakib | Portfolio</title>
+
+  <!-- SEO -->
+  <title>Rakib Hossen | Frontend Developer Portfolio</title>
+  <meta name="description" content="Rakib Hossen is a Frontend Developer from Bangladesh. Skilled in HTML, CSS, JavaScript, Flask, and responsive web development.">
+  <meta name="keywords" content="Rakib Hossen, Frontend Developer, Web Developer Bangladesh, Portfolio, HTML CSS JavaScript, Flask">
+  <meta name="author" content="Rakib Hossen">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Rakib Hossen | Frontend Developer">
+  <meta property="og:description" content="Frontend Developer building clean & responsive websites. CST student at Jashore Polytechnic Institute.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/home.png">
+  <meta property="og:site_name" content="Rakib Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rakib Hossen | Frontend Developer">
+  <meta name="twitter:description" content="Frontend Developer from Bangladesh skilled in modern web technologies.">
+  
+  <!-- search console -->
+  <meta name="google-site-verification" content="JjO2cuOdA4GIoB8N9LbVg1Tjkz5AlzwbxJvLhHvhuAI" />
+  <!-- Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="header">
+<header class="header" role="banner">
   <div class="logo">Rakib</div>
-  <i class="fas fa-bars" id="menu"></i>
-  <nav class="navbar">
+  <i class="fas fa-bars" id="menu" aria-label="Open navigation menu" role="button" tabindex="0"></i>
+
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <a href="#home" class="nav-link">Home</a>
     <a href="#about" class="nav-link">About</a>
     <a href="#skills" class="nav-link">Skills</a>
     <a href="#projects" class="nav-link">Projects</a>
     <a href="#contact" class="nav-link">Contact</a>
-    <i class="fas fa-moon" id="darkToggle"></i>
+    <i class="fas fa-moon" id="darkToggle" aria-label="Toggle dark mode" role="button" tabindex="0"></i>
   </nav>
 </header>
 
+<main id="main-content">
+
 <!-- Home Section -->
-<section class="home" id="home">
+<section class="home" id="home" aria-labelledby="home-title">
   <div class="home-content">
     <div class="home-text">
       <h3>Hello, I'm</h3>
-      <h1>Rakib Hossen</h1>
-      <h3>I'm a <span id="typed"></span></h3>
+      <h1 id="home-title">Rakib Hossen</h1>
+      <h3>I'm a <span id="typed" aria-live="polite"></span></h3>
       <p>Frontend developer building clean & responsive websites.</p>
     </div>
     <div class="home-img">
-      <img src="img/home.png" alt="Rakib" class="float">
+      <img src="img/home.png" alt="Portrait of Rakib Hossen" class="float">
     </div>
   </div>
 </section>
 
 <!-- About Section -->
-<section class="about" id="about">
+<section class="about" id="about" aria-labelledby="about-title">
   <div class="about-img scroll">
-    <img src="img/about.jpg" alt="About Me">
+    <img src="img/about.jpg" alt="Rakib Hossen working as a frontend developer">
   </div>
   <div class="about-text scroll">
-    <h2 class="section-title">About <span>Me</span></h2>
+    <h2 class="section-title" id="about-title">About <span>Me</span></h2>
     <p>
       I'm a frontend developer from Bangladesh.  
       Currently studying <strong>Computer Science & Technology</strong>  
@@ -53,14 +80,119 @@
 </section>
 
 <!-- Skills Section -->
-<section class="skills" id="skills">
-  <h2 class="section-title scroll">My <span>Skills</span></h2>
+<section class="skills" id="skills" aria-labelledby="skills-title">
+  <h2 class="section-title scroll" id="skills-title">My <span>Skills</span></h2>
 
   <div class="skill-grid">
 
-    <!-- Programming -->
     <div class="skill-card scroll">
       <h4>Programming</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Programming Language">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Programming Language">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Programming Language">
+      </div>
+    </div>
+
+    <div class="skill-card scroll">
+      <h4>Web Dev</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      </div>
+    </div>
+
+    <div class="skill-card scroll">
+      <h4>Framework</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap Framework">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask Framework">
+      </div>
+    </div>
+
+    <div class="skill-card scroll">
+      <h4>Database</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="MariaDB Database">
+      </div>
+    </div>
+
+    <div class="skill-card scroll">
+      <h4>OS</h4>
+      <div class="skill-logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux Operating System">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Operating System">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects" aria-labelledby="projects-title">
+  <h2 class="section-title scroll" id="projects-title">My <span>Projects</span></h2>
+  <div class="project-grid">
+
+    <div class="card scroll">
+      <a href="https://smartattendencesystemrakib.netlify.app/" aria-label="Smart Attendance System Project">
+        <img src="img/project1.jpg" alt="Smart Attendance System project preview">
+      </a>
+      <div class="layer">
+        <h4>Smart Attendance System</h4>
+      </div>
+    </div>
+
+    <div class="card scroll">
+      <img src="img/project2.jpg" alt="Login Page UI Project">
+      <div class="layer">
+        <h4>Login Page</h4>
+      </div>
+    </div>
+
+    <div class="card scroll">
+      <img src="img/project3.jpg" alt="Personal Portfolio Website Project">
+      <div class="layer">
+        <h4>Portfolio</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 class="section-title scroll" id="contact-title">Contact <span>Me</span></h2>
+
+  <form onsubmit="sendToWhatsApp();return false;" class="scroll" aria-label="Contact Form">
+    <input id="name" placeholder="Name" aria-label="Your name" required>
+    <input id="phone" placeholder="Phone" aria-label="Your phone number" required>
+    <input id="email" placeholder="Email" aria-label="Your email address" required>
+    <textarea id="message" placeholder="Message" aria-label="Your message" required></textarea>
+    <button aria-label="Send message via WhatsApp">Send via WhatsApp</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-content">
+    <h3>Rakib Hossen</h3>
+    <p>Frontend Developer • CST Student at Jashore Polytechnic Institute</p>
+
+    <div class="footer-social">
+      <a href="https://github.com/rakib-sk" aria-label="Rakib on GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/share/16nXunAwJK/" aria-label="Rakib on Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Rakib on LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <span class="footer-copy">© 2026 Rakib Hossen. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>      <h4>Programming</h4>
       <div class="skill-logos">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
